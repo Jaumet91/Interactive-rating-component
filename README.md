@@ -51,11 +51,11 @@ const [value, setValue] = useState(0);
 const [rating, setRating] = useState(0);
 ```
 
-I don't try to make the code as eficient as posible, instead I try to mix things that I learn along the way so I get more practice.
+I don't try to make the code as efficient as posible, instead I try to mix things that I learn along the way so I get more practice.
 
 ### Continued development
 
-I think the app can be improved by handling the case where the user clicks on the backgraound after clicking a rating button, so the grey hover effect on the button goes away so this can lead to confusion.
+I think the app can be improved by handling the case where the user clicks on the background after clicking a rating button, so the grey hover effect on the button goes away so this can lead to confusion.
 
 ## Author
 

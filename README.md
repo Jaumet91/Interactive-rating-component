@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add live site URL here](https://dashing-zuccutto-3476b2.netlify.app/)
+- Solution URL: [live site URL](https://dashing-zuccutto-3476b2.netlify.app/)
 
 ## My process
 

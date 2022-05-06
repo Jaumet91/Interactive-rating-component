@@ -6,19 +6,6 @@ const App = () => {
   const [value, setValue] = useState(0);
   const [rating, setRating] = useState(0);
 
-  const button = (i) => {
-    return (
-      <button
-        type='button'
-        className='grid place-content-center rounded-full bg-DB w-11 h-11 text-sm 
-          text-Light_Grey hover:text-white focus:text-white hover:bg-Orange focus:bg-Medium_Grey'
-        onClick={() => setValue(i)}
-      >
-        {i}
-      </button>
-    );
-  };
-
   return (
     <div className='bg-VD_Blue h-screen grid place-content-center text-white'>
       {rating === 0 ? (
@@ -37,11 +24,11 @@ const App = () => {
               </div>
               <div className='sm:box-border sm:w-80'>
                 <div className='mt-5 flex justify-between'>
-                  {button(1)}
-                  {button(2)}
-                  {button(3)}
-                  {button(4)}
-                  {button(5)}
+                  <Button i={1} setValue={setValue} />
+                  <Button i={2} setValue={setValue} />
+                  <Button i={3} setValue={setValue} />
+                  <Button i={4} setValue={setValue} />
+                  <Button i={5} setValue={setValue} />
                 </div>
                 <div className='mb-1 mt-6 sm:mt-7 flex'>
                   <button
@@ -63,6 +50,19 @@ const App = () => {
       )}
       <Footer />
     </div>
+  );
+};
+
+const Button = ({ i, setValue }) => {
+  return (
+    <button
+      type='button'
+      className='grid place-content-center rounded-full bg-DB w-11 h-11 text-sm 
+        text-Light_Grey hover:text-white focus:text-white hover:bg-Orange focus:bg-Medium_Grey'
+      onClick={() => setValue(i)}
+    >
+      {i}
+    </button>
   );
 };
 
